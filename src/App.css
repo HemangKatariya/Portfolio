@@ -1,0 +1,422 @@
+* {
+    background-color: black;
+    color: aliceblue;
+    scroll-behavior: smooth;
+    inset: 0px;
+    text-decoration: none !important;
+    /* cursor: none !important; */
+}
+
+
+/* unvisited link */
+a:link {
+    color: white !important;
+}
+
+/* visited link */
+a:visited {
+    color: white !important;
+}
+
+/* mouse over link */
+a:hover {
+    color: #66B95C !important;
+}
+
+/* selected link */
+a:active {
+    color: #66B95C !important;
+}
+
+.green {
+    color: #66B95C !important;
+}
+
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+
+
+.atext {
+    position: relative;
+    color: #4070f4;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+#atext {
+    word-wrap: break-word;
+}
+
+.f-text {
+    color: #fff745;
+}
+
+.s-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-left: 2px solid black;
+    animation: typing 0.8s steps(18, end)
+}
+
+
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+.circle {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #66B95C;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    transition: .25s;
+}
+
+.dot {
+    position: fixed;
+    width: 7px;
+    height: 7px;
+    background-color: #66B95C;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: .1s;
+}
+
+.circle:hover {
+    transform: scale(1.5);
+    opacity: 0.3;
+}
+
+.dot:hover {
+    transform: scale(2);
+    opacity: 0.7;
+}
+
+
+.bg-dark {
+    background-color: black !important;
+}
+
+#Home {
+    overflow: hidden;
+}
+
+z .bgblack {
+    background-color: black;
+    color: #fff;
+    min-height: 100vh;
+}
+
+
+.text {
+    font-weight: 100;
+    font-size: 28px;
+    color: #000;
+}
+
+.dud {
+    color: #757575;
+}
+
+.hey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hey p:first-child,
+.hey p:last-child {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.butt {
+    width: 170px;
+    padding: 8px;
+    border: none;
+    background-color: #66B95C;
+    border-radius: 25px;
+    font-weight: 600 !important;
+    margin-top: 20px;
+}
+
+.butt:hover {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600 !important;
+    transition-duration: 0.5s;
+}
+
+.developer {
+    position: relative;
+    font-family: sans-serif;
+    /* text-transform: uppercase; */
+    /* font-size: 2em; */
+    /* letter-spacing: 4px; */
+
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+.intro:hover {
+    color: #66B95C;
+    transition-duration: 1s;
+}
+
+input,
+textarea {
+    border: none;
+    overflow: auto;
+
+}
+
+::placeholder {
+    color: grey;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+}
+
+textarea {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Arvo', serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 0.9rem !important;
+}   
+
+
+
+
+
+body {
+    background-color: #000;
+    margin: 0px;
+}
+
+.wrap {
+    margin-top: 120px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    background-size: 80px 80px;
+}
+
+.cube {
+    margin: auto;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+}
+
+.cube img {
+    height: 180px;
+    width: 180px;
+}
+
+.cube div {
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    opacity: 0.8;
+    width: 100%;
+    color: #fff;
+    font: normal 50pt Arial;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in;
+}
+
+.front {
+    transform: translateZ(100px);
+    background: linear-gradient(to right, #ff7816, #ff4b00);
+}
+
+.back {
+    transform: translateZ(-100px) rotateY(180deg);
+    background: linear-gradient(to right, #ff7816, #ff4b00);
+}
+
+.right {
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+    background-color: #ffdf00;
+}
+
+.left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+    background-color: #ffdf00;
+}
+
+.top {
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
+    background-color: #2196f3;
+}
+
+.bottom {
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+    background-color: #2196f3;
+}
+
+.cube {
+    animation: rotate 7s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.core {
+    color: #fff;
+    font: normal 70pt Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff00;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.cube:hover .front {
+    transform: translateZ(200px);
+}
+
+.cube:hover .back {
+    transform: translateZ(-200px) rotateY(180deg);
+}
+
+.cube:hover .right {
+    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
+.cube:hover .left {
+    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+}
+
+.cube:hover .top {
+    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+}
+
+.cube:hover .bottom {
+    transform: rotateX(270deg) translateZ(100px) translateY(100px);
+}
+
+
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh !important;
+}
+
+.carousel-container {
+    max-width: 500px;
+}
+
+.abcd {
+    margin-top: -60px !important;
+}
+
+.abcd2 {
+    margin-top: -45px !important;
+}
+
+.modal-content {
+    background-color: #000 !important;
+}
+
+
+
+
+
+
+.text {
+    color: #FAFAFA;
+}
+
+.dud {
+    color: #FAFAFA
+}
